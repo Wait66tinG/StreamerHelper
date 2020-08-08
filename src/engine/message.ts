@@ -84,7 +84,7 @@ export const downloadStream = (stream: StreamInfo) => {
   ]);
   const tags = stream.streamTags
   const submit = () => {
-    upload2bilibili(dirName, `${stream.streamName} ${timeV}录播`, ` 本录播由StreamerHelper强力驱动:  https://github.com/ZhangMingZhao1/StreamerHelper，对您有帮助的话，求个star`, tags, stream.liveUrl)
+    upload2bilibili(dirName, `${stream.streamName} ${timeV}直播录像`, ` 本录播由StreamerHelper强力驱动:  https://github.com/ZhangMingZhao1/StreamerHelper，感谢支持`, tags, stream.liveUrl)
       .then((message) => {
         logger.info(message)
         try {
